@@ -59,6 +59,23 @@
   transition: background-color 0.2s;
 }
 
-.coutdownButton:hover {
+.coutdownButton:not(:disabled):hover {
   background: var(--blue-dark);
+}
+
+.coutdownButtonActive {
+  background: var(--white);
+  color: var(--title);
+}
+
+.coutdownButtonActive:not(:disabled):hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.coutdownButton:disabled {
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
+  border-bottom: 4px solid var(--green);
 }
