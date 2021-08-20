@@ -8,7 +8,8 @@ import body from "../../public/icons/body.svg";
 import styles from "../styles/components/ChallengeBox.module.css";
 
 export function ChallengeBox() {
-  const { activeChallenge, resetChallenge } = useContext(ChallengeContext);
+  const { activeChallenge, resetChallenge, completedChallenge } =
+    useContext(ChallengeContext);
 
   return (
     <div className={styles.challengeBoxContainer}>
@@ -33,7 +34,11 @@ export function ChallengeBox() {
             >
               Falhei
             </button>
-            <button type="button" className={styles.challengeSucceededButton}>
+            <button
+              type="button"
+              className={styles.challengeSucceededButton}
+              onClick={completedChallenge}
+            >
               Completei
             </button>
           </footer>
