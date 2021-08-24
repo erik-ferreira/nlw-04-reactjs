@@ -1,0 +1,10 @@
+Criar o projeto com next.js:
+  yarn create next-app nome_do_projeto
+
+Instalar o typescript e algumas tipagens dentro do next.js:
+  yarn add typescript @types/react @types/react-dom @types/node -D
+
+Para rodar o projeto:
+  yarn dev
+
+00:49:00
